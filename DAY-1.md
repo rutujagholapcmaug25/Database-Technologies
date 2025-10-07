@@ -1,6 +1,5 @@
-# 📚 Complete Database Interview Guide
 
-> **A comprehensive guide covering Database Fundamentals, RDBMS, SQL, ER Diagrams, and NoSQL for technical interviews**
+> **Database Fundamentals, RDBMS, SQL, ER Diagrams, and NoSQL for technical interviews**
 
 ---
 
@@ -9,7 +8,7 @@
 1. [Database Fundamentals](#1-database-fundamentals)
 2. [Database vs DBMS](#2-database-vs-dbms)
 3. [Database Models](#3-database-models)
-4. [RDBMS Deep Dive](#4-rdbms-deep-dive)
+4. [RDBMS](#4-rdbms)
 5. [Codd's 12 Rules](#5-codds-12-rules)
 6. [Entity-Relationship Diagrams](#6-entity-relationship-diagrams)
 7. [SQL Essentials](#7-sql-essentials)
@@ -23,17 +22,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Knowledge Hierarchy                       │
+│                    Knowledge Hierarchy                      │
 ├─────────────────────────────────────────────────────────────┤
-│                                                               │
-│    📊 Data (Raw Facts)                                       │
-│           ↓ Process & Organize                               │
-│    📈 Information (Meaningful Data)                          │
-│           ↓ Analyze & Understand                             │
-│    🧠 Knowledge (Applied Information)                        │
-│           ↓ Experience & Insight                             │
-│    💡 Wisdom (Informed Decisions)                            │
-│                                                               │
+│                                                             │
+│    📊 Data (Raw Facts)                                      │
+│           ↓ Process & Organize                              │
+│    📈 Information (Meaningful Data)                         |
+│           ↓ Analyze & Understand                            │
+│    🧠 Knowledge (Applied Information)                       │
+│           ↓ Experience & Insight                            │
+│    💡 Wisdom (Informed Decisions)                           │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -56,19 +55,19 @@
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│                     DATA CLASSIFICATION                           │
+│                     DATA CLASSIFICATION                          │
 ├──────────────────────────────────────────────────────────────────┤
-│                                                                    │
-│  STRUCTURED DATA              UNSTRUCTURED DATA                   │
+│                                                                  │
+│  STRUCTURED DATA              UNSTRUCTURED DATA                  │
 │  ┌────────────────┐           ┌──────────────────┐               │
-│  │  ID │ Name │Age│           │  📧 Emails       │               │
+│  │  ID │ Name │Age│           │  📧 Emails       │              │
 │  ├────┼──────┼───┤           │  📸 Images       │               │
 │  │ 1  │ John │25 │           │  🎥 Videos       │               │
 │  │ 2  │ Mary │30 │           │  📱 Social Posts │               │
-│  └────────────────┘           │  📄 Documents    │               │
-│                                └──────────────────┘               │
-│  ✅ Easy to Query (SQL)        ⚙️ Needs AI/ML Tools              │
-│  📊 Relational Databases       🗄️ NoSQL/Data Lakes               │
+│  └────────────────┘           │  📄 Documents    │              │
+│                                └──────────────────┘              │
+│  ✅ Easy to Query (SQL)        ⚙️ Needs AI/ML Tools             │
+│  📊 Relational Databases       🗄️ NoSQL/Data Lakes              │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
@@ -90,15 +89,15 @@
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  DATABASE ECOSYSTEM                      │
+│                  DATABASE ECOSYSTEM                     │
 ├─────────────────────────────────────────────────────────┤
-│                                                           │
+│                                                         │
 │  👤 Users ──→ [DBMS] ──→ 🗄️ Database (Tables)          │
-│                  ↓                                        │
-│            SQL Queries                                    │
-│                  ↓                                        │
-│         Data Operations (CRUD)                            │
-│                                                           │
+│                  ↓                                      │
+│            SQL Queries                                  │
+│                  ↓                                      │
+│         Data Operations (CRUD)                          │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -133,7 +132,7 @@
 | **Security** | Minimal, manual checks | Strong constraints & integrity |
 | **Use Case** | Personal budgets, simple lists | Enterprise apps, banking, analytics |
 
-**Interview Tip:** *Spreadsheets are for individual, small-scale tasks; databases are for enterprise-level, multi-user, secure data management.*
+*Spreadsheets are for individual, small-scale tasks; databases are for enterprise-level, multi-user, secure data management.*
 
 ---
 
@@ -221,21 +220,21 @@ Airbnb • Uber • LinkedIn • Facebook • Twitter • YouTube
 > **Database** = Library (books/data)  
 > **DBMS** = Librarian (manages the library)
 
-**✅ Advantages of DBMS:**
+**Advantages of DBMS:**
 - Data security & access control
 - Backup & recovery mechanisms
 - Multi-user environment support
 - Integrity constraint enforcement
 - Reduced data redundancy
 
-**💼 Real-World Examples:**
+**Real-World Examples:**
 Railway reservation • Banking systems • Healthcare records • Inventory management
 
 ---
 
 ## 3. Database Models
 
-### 📊 Model Comparison Overview
+### Model Comparison Overview
 
 ```
         DATABASE MODELS EVOLUTION
@@ -343,15 +342,15 @@ Hierarchical  Network   Relational
 
 ```
 ┌──────────────────────────────────────────────────┐
-│              NoSQL DATABASE TYPES                 │
+│              NoSQL DATABASE TYPES                │
 ├──────────────────────────────────────────────────┤
-│                                                    │
+│                                                  │
 │  Key-Value      Document      Column     Graph   │
-│  ┌──────┐      ┌──────┐      ┌──────┐  ┌──────┐ │
+│  ┌──────┐      ┌──────┐      ┌──────┐  ┌──────┐  │
 │  │Redis │      │MongoDB│      │Cassan│  │Neo4j │ │
 │  │      │      │CouchDB│      │-dra  │  │      │ │
-│  └──────┘      └──────┘      └──────┘  └──────┘ │
-│                                                    │
+│  └──────┘      └──────┘      └──────┘  └──────┘  │
+│                                                  │
 │  Fast cache    Flexible     Wide-column  Networks│
 └──────────────────────────────────────────────────┘
 ```
@@ -363,37 +362,37 @@ Hierarchical  Network   Relational
 | **Column** | Wide-column storage | Cassandra, HBase | Time-series data, analytics |
 | **Graph** | Nodes & relationships | Neo4j, ArangoDB | Social networks, recommendations |
 
-**💼 Applications:** Big Data, Real-time analytics, Social media platforms
+**Applications:** Big Data, Real-time analytics, Social media platforms
 
 ---
 
-## 4. RDBMS Deep Dive
+## 4. RDBMS 
 
-### 🎯 What is RDBMS?
+### What is RDBMS?
 
 **Definition:** An advanced DBMS that stores data in tables (relations) with rows and columns, supporting relationships through keys.
 
 ```
 ┌────────────────────────────────────────────────────┐
-│            RDBMS ARCHITECTURE                       │
+│            RDBMS ARCHITECTURE                      │
 ├────────────────────────────────────────────────────┤
-│                                                      │
-│  Application Layer                                  │
-│       ↓                                             │
-│  SQL Interface                                      │
-│       ↓                                             │
-│  Query Processor                                    │
-│       ↓                                             │
-│  Storage Engine                                     │
-│       ↓                                             │
-│  Physical Database (Tables, Indexes)                │
-│                                                      │
+│                                                    │
+│  Application Layer                                 │
+│       ↓                                            │
+│  SQL Interface                                     │
+│       ↓                                            │
+│  Query Processor                                   │
+│       ↓                                            │
+│  Storage Engine                                    │
+│       ↓                                            │
+│  Physical Database (Tables, Indexes)               │
+│                                                    │
 └────────────────────────────────────────────────────┘
 ```
 
 ---
 
-### 🔑 Key Features of RDBMS
+### Key Features of RDBMS
 
 | Feature | Description | Benefit |
 |---------|-------------|---------|
@@ -406,22 +405,22 @@ Hierarchical  Network   Relational
 
 ---
 
-### 📦 RDBMS Components
+### RDBMS Components
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                 TABLE STRUCTURE                      │
+│                 TABLE STRUCTURE                     │
 ├─────────────────────────────────────────────────────┤
-│                                                       │
-│  STUDENTS TABLE                                      │
-│  ┌──────────┬─────────┬───────────────┬──────────┐ │
-│  │student_id│  name   │    email      │   dob    │ │
-│  │   (PK)   │         │   (UNIQUE)    │          │ │
-│  ├──────────┼─────────┼───────────────┼──────────┤ │
-│  │   101    │ John    │ john@edu.com  │1998-05-10│ │
-│  │   102    │ Mary    │ mary@edu.com  │1999-03-15│ │
-│  └──────────┴─────────┴───────────────┴──────────┘ │
-│     ↑                                                │
+│                                                     │
+│  STUDENTS TABLE                                     │
+│  ┌──────────┬─────────┬───────────────┬──────────┐  │
+│  │student_id│  name   │    email      │   dob    │  │
+│  │   (PK)   │         │   (UNIQUE)    │          │  │
+│  ├──────────┼─────────┼───────────────┼──────────┤  │
+│  │   101    │ John    │ john@edu.com  │1998-05-10│  │
+│  │   102    │ Mary    │ mary@edu.com  │1999-03-15│  │
+│  └──────────┴─────────┴───────────────┴──────────┘  │
+│     ↑                                               │
 │  Primary Key (Unique Identifier)                    │
 └─────────────────────────────────────────────────────┘
 ```
@@ -437,7 +436,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### ⚖️ DBMS vs RDBMS (Interview Critical)
+### DBMS vs RDBMS 
 
 | Aspect | DBMS | RDBMS | 🎯 Interview Insight |
 |--------|------|-------|---------------------|
@@ -457,7 +456,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### ✅ Advantages of RDBMS
+### Advantages of RDBMS
 
 ```
 ┌─────────────────────────────────────┐
@@ -476,7 +475,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### 🌍 Real-Life RDBMS Applications
+### Real-Life RDBMS Applications
 
 | Domain | Use Case | Database |
 |--------|----------|----------|
@@ -488,18 +487,18 @@ Hierarchical  Network   Relational
 
 ---
 
-### 🔐 ACID Properties
+### ACID Properties
 
 ```
 ┌──────────────────────────────────────────────────┐
-│              ACID PROPERTIES                      │
+│              ACID PROPERTIES                     │
 ├──────────────────────────────────────────────────┤
-│                                                    │
+│                                                  │
 │  A - Atomicity        All or nothing             │
 │  C - Consistency      Valid state always         │
 │  I - Isolation        Concurrent transactions    │
 │  D - Durability       Permanent after commit     │
-│                                                    │
+│                                                  │
 └──────────────────────────────────────────────────┘
 ```
 
@@ -512,7 +511,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### 📚 Popular RDBMS Examples
+### Popular RDBMS Examples
 
 | RDBMS | Type | Key Features | Common Use |
 |-------|------|--------------|------------|
@@ -527,25 +526,25 @@ Hierarchical  Network   Relational
 
 ## 5. Codd's 12 Rules
 
-### 📜 Introduction
+### Introduction
 
 **Dr. E.F. Codd** proposed **13 rules (Rule 0 to Rule 12)** to define what makes a system truly relational.
 
 ```
 ┌──────────────────────────────────────────────────┐
-│         CODD'S RULES HIERARCHY                    │
+│         CODD'S RULES HIERARCHY                   │
 ├──────────────────────────────────────────────────┤
-│                                                    │
+│                                                  │
 │  Rule 0: Foundation (Must use relational model)  │
-│     ↓                                             │
+│     ↓                                            │
 │  Rules 1-4: Data Representation & Access         │
-│     ↓                                             │
+│     ↓                                            │
 │  Rules 5-7: Data Manipulation                    │
-│     ↓                                             │
+│     ↓                                            │
 │  Rules 8-11: Independence & Integrity            │
-│     ↓                                             │
+│     ↓                                            │
 │  Rule 12: Security & Non-subversion              │
-│                                                    │
+│                                                  │
 └──────────────────────────────────────────────────┘
 ```
 
@@ -571,53 +570,33 @@ Hierarchical  Network   Relational
 
 ---
 
-### 🎯 Interview Quick Reference
-
-```
-┌────────────────────────────────────────────────┐
-│       MOST FREQUENTLY ASKED RULES              │
-├────────────────────────────────────────────────┤
-│                                                 │
-│  Rule 0: Foundation (Relational only)          │
-│  Rule 2: Guaranteed Access (Table+PK+Column)   │
-│  Rule 8: Physical Independence                 │
-│  Rule 9: Logical Independence                  │
-│  Rule 10: Integrity Independence               │
-│                                                 │
-└────────────────────────────────────────────────┘
-```
-
-**Interview Tip:** Focus on **Rule 0, 2, 8, 9, and 10** — these are most commonly asked!
-
----
-
 ## 6. Entity-Relationship Diagrams
 
-### 🧩 What is an ER Diagram?
+### What is an ER Diagram?
 
 **Definition:** A visual representation of entities, their attributes, and relationships — used in database design before creating tables.
 
 ```
 ┌──────────────────────────────────────────────────┐
-│            ER DIAGRAM WORKFLOW                    │
+│            ER DIAGRAM WORKFLOW                   │
 ├──────────────────────────────────────────────────┤
-│                                                    │
-│  1. Identify Entities (Student, Course)           │
-│            ↓                                       │
-│  2. Define Attributes (name, email, credits)      │
-│            ↓                                       │
-│  3. Establish Relationships (ENROLLS_IN)          │
-│            ↓                                       │
-│  4. Draw ER Diagram                               │
-│            ↓                                       │
-│  5. Convert to Relational Schema (Tables)         │
-│                                                    │
+│                                                  │
+│  1. Identify Entities (Student, Course)          │
+│            ↓                                     │
+│  2. Define Attributes (name, email, credits)     │
+│            ↓                                     │
+│  3. Establish Relationships (ENROLLS_IN)         │
+│            ↓                                     │
+│  4. Draw ER Diagram                              │
+│            ↓                                     │
+│  5. Convert to Relational Schema (Tables)        │
+│                                                  │
 └──────────────────────────────────────────────────┘
 ```
 
 ---
 
-### 🔑 Core Concepts
+### Core Concepts
 
 | Concept | Description | Example |
 |---------|-------------|---------|
@@ -627,7 +606,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### 📊 Attribute Types
+### Attribute Types
 
 ```
               ATTRIBUTE TYPES
@@ -692,41 +671,6 @@ Hierarchical  Network   Relational
 
 ---
 
-### 🎨 ER Diagram Symbols
-
-```
-┌─────────────────────────────────────────────┐
-│          ER DIAGRAM NOTATION                 │
-├─────────────────────────────────────────────┤
-│                                              │
-│  ┌─────────┐        Entity                  │
-│  │ Student │                                │
-│  └─────────┘                                │
-│                                              │
-│  ╔═════════╗        Weak Entity             │
-│  ║Dependent║                                │
-│  ╚═════════╝                                │
-│                                              │
-│  ◇  Relationship                            │
-│  ◇  ENROLLS_IN                              │
-│                                              │
-│  ◈  Identifying Relationship                │
-│                                              │
-│  ⃝  Attribute                                │
-│  ⃝  name                                     │
-│                                              │
-│  ◎  Multi-valued Attribute                  │
-│  ◎  {phone}                                 │
-│                                              │
-│  ⃝  Derived Attribute (dashed)              │
-│  ---  age                                   │
-│                                              │
-│  ⃝  Key Attribute (underlined)              │
-│  _student_id_                               │
-│                                              │
-└─────────────────────────────────────────────┘
-```
-
 | Symbol | Representation |
 |--------|----------------|
 | Rectangle | Entity |
@@ -741,7 +685,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### 📊 Complete ER Diagram Example
+### Complete ER Diagram Example
 
 **Scenario:** University Database with Students, Courses, and Faculty
 
@@ -791,7 +735,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### 🔄 Relational Mapping (ER to Tables)
+### Relational Mapping (ER to Tables)
 
 **Converting ER Diagram to Relational Schema:**
 
@@ -800,32 +744,32 @@ Hierarchical  Network   Relational
 ┌────────────────────────────────────────────────┐
 │ TABLE: Student                                 │
 ├────────────────────────────────────────────────┤
-│ student_id (PK)  │ name    │ email   │ dob    │
-├──────────────────┼─────────┼─────────┼────────┤
-│ 101              │ John    │ j@...   │ 1998.. │
-│ 102              │ Mary    │ m@...   │ 1999.. │
+│ student_id (PK)  │ name    │ email   │ dob     │
+├──────────────────┼─────────┼─────────┼───────_ ┤
+│ 101              │ John    │ j@...   │ 1998..  │
+│ 102              │ Mary    │ m@...   │ 1999..  │ 
 └────────────────────────────────────────────────┘
 
 -- Entity: Course
 ┌────────────────────────────────────────────────┐
 │ TABLE: Course                                  │
 ├────────────────────────────────────────────────┤
-│ course_id (PK)   │ title          │ credits   │
-├──────────────────┼────────────────┼───────────┤
-│ CSE101           │ Databases      │ 4         │
-│ CSE102           │ Networks       │ 3         │
+│ course_id (PK)   │ title          │ credits    │
+├──────────────────┼────────────────┼────────── ─┤
+│ CSE101           │ Databases      │ 4          │
+│ CSE102           │ Networks       │ 3          │
 └────────────────────────────────────────────────┘
 
 -- M:N Relationship: ENROLLS_IN
 ┌────────────────────────────────────────────────┐
-│ TABLE: Enrollment (Bridge Table)              │
+│ TABLE: Enrollment (Bridge Table)               │
 ├────────────────────────────────────────────────┤
-│ student_id │ course_id │ semester │ grade     │
-│    (FK)    │   (FK)    │          │           │
+│ student_id │ course_id │ semester │ grade      │
+│    (FK)    │   (FK)    │          │            │
 ├────────────┼───────────┼──────────┼───────────┤
-│ 101        │ CSE101    │ Fall2024 │ A         │
-│ 101        │ CSE102    │ Fall2024 │ B+        │
-│ 102        │ CSE101    │ Fall2024 │ A-        │
+│ 101        │ CSE101    │ Fall2024 │ A          │
+│ 101        │ CSE102    │ Fall2024 │ B+         │
+│ 102        │ CSE101    │ Fall2024 │ A-         │
 └────────────────────────────────────────────────┘
 -- Composite PK: (student_id, course_id, semester)
 ```
@@ -846,7 +790,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### 💼 Real-Life ER Applications
+### Real-Life ER Applications
 
 | Domain | Entities | Relationships | Use Case |
 |--------|----------|---------------|----------|
@@ -858,36 +802,9 @@ Hierarchical  Network   Relational
 
 ---
 
-### 🎯 Interview Tips for ER Diagrams
-
-```
-┌──────────────────────────────────────────────┐
-│     COMMON ER DIAGRAM INTERVIEW QUESTIONS    │
-├──────────────────────────────────────────────┤
-│                                               │
-│ 1. Draw ER for Library Management System     │
-│ 2. Explain weak entity with example          │
-│ 3. Convert given ER to relational schema     │
-│ 4. Difference between 1:N and M:N            │
-│ 5. What is total vs partial participation?   │
-│ 6. How to handle multi-valued attributes?    │
-│ 7. Design ER for e-commerce system           │
-│                                               │
-└──────────────────────────────────────────────┘
-```
-
-**Pro Tips:**
-- Always identify entities first, then relationships
-- Use meaningful names for entities and relationships
-- Mark key attributes clearly
-- Show cardinality ratios explicitly
-- Practice converting ER to SQL tables
-
----
-
 ## 7. SQL Essentials
 
-### 🗃️ What is SQL?
+### What is SQL?
 
 **SQL (Structured Query Language)** is the standard language for managing relational databases, enabling CRUD operations (Create, Read, Update, Delete).
 
@@ -896,7 +813,7 @@ Hierarchical  Network   Relational
 │              SQL ECOSYSTEM                    │
 ├──────────────────────────────────────────────┤
 │                                               │
-│  User ──→ SQL Query ──→ DBMS ──→ Database   │
+│  User ──→ SQL Query ──→ DBMS ──→ Database     │
 │                ↓                              │
 │           Results Returned                    │
 │                                               │
@@ -939,7 +856,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### 🔑 Key SQL Concepts
+### Key SQL Concepts
 
 ```
 ┌──────────────────────────────────────────────┐
@@ -967,7 +884,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### 📊 SQL Data Types
+### SQL Data Types
 
 | Category | Data Types | Description | Example |
 |----------|-----------|-------------|---------|
@@ -979,7 +896,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### 🛠️ SQL Constraints
+### SQL Constraints
 
 ```
 ┌──────────────────────────────────────────────┐
@@ -1007,7 +924,7 @@ Hierarchical  Network   Relational
 
 ---
 
-### 📝 SQL DDL Examples
+### SQL DDL Examples
 
 #### **CREATE TABLE**
 
@@ -1078,7 +995,7 @@ TRUNCATE TABLE enrollments;
 
 ---
 
-### 📥 SQL DML Examples
+### SQL DML Examples
 
 #### **INSERT**
 
@@ -1177,7 +1094,7 @@ DELETE FROM temp_students;
 
 ---
 
-### 🔗 SQL Joins
+### SQL Joins
 
 ```
 ┌──────────────────────────────────────────────┐
@@ -1192,18 +1109,6 @@ DELETE FROM temp_students;
 │  SELF JOIN     ──→ Table joined with itself  │
 │                                               │
 └──────────────────────────────────────────────┘
-```
-
-**Visual Representation:**
-
-```
-INNER JOIN          LEFT JOIN           RIGHT JOIN
-   A ∩ B              A + (A ∩ B)         B + (A ∩ B)
-   
-   ┌───┐              ┌───┐              ┌───┐
-   │ A │ B            │ A │ B            │ A │ B
-   └───┘              └───┘              └───┘
-     ▓                ▓▓▓▓                  ▓▓▓
 ```
 
 #### **Join Examples**
@@ -1235,7 +1140,7 @@ INNER JOIN students s2 ON s1.batch = s2.batch AND s1.student_id < s2.student_id;
 
 ---
 
-### 🎯 Advanced SQL Concepts
+### Advanced SQL Concepts
 
 #### **Subqueries**
 
@@ -1319,32 +1224,9 @@ ROLLBACK TO sp1;
 
 ---
 
-### 📋 SQL Interview Questions Quick Reference
-
-```
-┌──────────────────────────────────────────────┐
-│       TOP SQL INTERVIEW TOPICS               │
-├──────────────────────────────────────────────┤
-│                                               │
-│ ✓ Difference: DELETE vs TRUNCATE vs DROP    │
-│ ✓ Types of JOINS with examples              │
-│ ✓ Primary Key vs Foreign Key                │
-│ ✓ GROUP BY vs HAVING                         │
-│ ✓ Subqueries vs Joins                        │
-│ ✓ Normalization (1NF, 2NF, 3NF)             │
-│ ✓ ACID properties                            │
-│ ✓ Indexes and their types                   │
-│ ✓ Views and their advantages                │
-│ ✓ SQL injection and prevention              │
-│                                               │
-└──────────────────────────────────────────────┘
-```
-
----
-
 ## 8. MongoDB (NoSQL)
 
-### 🍃 What is MongoDB?
+### What is MongoDB?
 
 **MongoDB** is a NoSQL, document-oriented database that stores data as JSON-like documents (BSON) instead of tables and rows.
 
@@ -1369,7 +1251,7 @@ ROLLBACK TO sp1;
 
 ---
 
-### 🔹 Key Features of MongoDB
+### Key Features of MongoDB
 
 | Feature | Description | Benefit |
 |---------|-------------|---------|
@@ -1383,7 +1265,7 @@ ROLLBACK TO sp1;
 
 ---
 
-### 💾 MongoDB Document Example
+### MongoDB Document Example
 
 ```json
 {
@@ -1430,7 +1312,7 @@ ROLLBACK TO sp1;
 
 ---
 
-### ⚖️ RDBMS vs MongoDB Detailed Comparison
+### RDBMS vs MongoDB Detailed Comparison
 
 | Aspect | RDBMS | MongoDB (NoSQL) |
 |--------|-------|----------------|
@@ -1449,7 +1331,7 @@ ROLLBACK TO sp1;
 
 ---
 
-### 📚 MongoDB Terminology
+### MongoDB Terminology
 
 ```
 ┌────────────────────────────────────────────────┐
@@ -1470,7 +1352,7 @@ ROLLBACK TO sp1;
 
 ---
 
-### 🛠️ MongoDB Operations
+### MongoDB Operations
 
 #### **Create (Insert)**
 
@@ -1571,7 +1453,7 @@ db.students.deleteMany({});
 
 ---
 
-### 📊 MongoDB Aggregation Pipeline
+### MongoDB Aggregation Pipeline
 
 ```javascript
 db.enrollments.aggregate([
