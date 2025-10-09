@@ -1,4 +1,4 @@
-# MySQL Views and Indexes
+# Views and Indexes
 
 ## 1. MySQL Views
 
@@ -105,14 +105,3 @@ WHERE condition;
 SELECT * FROM customers USE INDEX(idx_name_fl, idx_name_lf)
 WHERE contactFirstName LIKE 'A%' OR contactLastName LIKE 'A%';
 ```
-
-### Best Practices
-1. Index frequently filtered columns (`WHERE`, `JOIN`, `ORDER BY`, `GROUP BY`).
-2. Avoid over-indexing — slows down write operations.
-3. Prefer composite indexes for multi-column queries.
-4. Run `ANALYZE TABLE` to update index statistics.
-5. Use `EXPLAIN` to check index usage.
-6. Avoid indexing low-cardinality columns (e.g., gender).
-
----
-
