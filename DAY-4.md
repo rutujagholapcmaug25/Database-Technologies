@@ -1,4 +1,4 @@
-# MySQL Functions & Joins - Complete Reference Guide
+# MySQL Functions & Joins
 
 ## 📝 String Functions
 
