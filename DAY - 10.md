@@ -1,4 +1,4 @@
-# PL/SQL & MySQL Flow-Control Statements
+# PL/SQL 
 
 ## 1. IF Function
 - **Definition:** Returns a value based on a condition. Also called IF-ELSE or IF-THEN-ELSE function.
