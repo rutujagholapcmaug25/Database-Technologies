@@ -1,7 +1,5 @@
 # MySQL UNION, FULL OUTER JOIN, Execution Order & Subqueries
 
-This repository contains notes and practice examples for advanced **MySQL queries**, including UNION, FULL OUTER JOIN, subqueries, and execution order of SQL statements. It summarizes key concepts and usage with examples.
-
 ---
 
 ## **1. UNION and UNION ALL**
@@ -146,15 +144,4 @@ SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
 | EXISTS   | TRUE if any row exists in subquery |
 
 ---
-
-### **Conclusion**
-
-These MySQL concepts allow you to:
-- Combine multiple queries (`UNION`/`UNION ALL`).
-- Simulate `FULL OUTER JOIN`.
-- Control query execution with subqueries (scalar, correlated, row-based).
-- Write more readable and modular SQL queries.
-
----
-```
 
