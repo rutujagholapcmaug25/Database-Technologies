@@ -3,7 +3,7 @@
 ## 1. Introduction
 
 This project demonstrates the use of **functions and stored procedures** in a **Sports Management System**.  
-The system tracks players, matches, and individual player scores. Key concepts include:
+The system tracks players, matches, and individual player scores. 
 
 - **User-Defined Functions (UDFs)**: To calculate player initials or total points.  
 - **Stored Procedures**: To perform operations like inserting players and completing matches.  
