@@ -1,6 +1,4 @@
-# Employee Management System - SQL Queries Guide
-
-## Database Schema
+# Employee Management System 
 
 ### Table Structures
 
@@ -37,7 +35,7 @@ CREATE TABLE project (
 
 ---
 
-## Sample Data
+## Data
 
 ### Department Table Data
 ```sql
