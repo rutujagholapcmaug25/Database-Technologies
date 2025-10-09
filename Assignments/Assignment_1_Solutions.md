@@ -45,7 +45,7 @@ Define the relationships between entities along with cardinalities (1:1, 1:M, M:
 #### 3. Draw the ER Diagram
 Use symbols for entities, attributes, relationships, and cardinalities.
 
-![University Management System ER Diagram](UMS.png)
+![University Management System ER Diagram](UMS.jpg)             
 
 ---
 
