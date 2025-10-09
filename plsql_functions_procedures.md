@@ -1,8 +1,8 @@
-# Sports Management System – MySQL Functions & Procedures
+# Sports Management System – Functions & Procedures
 
 ## 1. Introduction
 
-This project demonstrates the use of **MySQL functions and stored procedures** in a **Sports Management System**.  
+This project demonstrates the use of **functions and stored procedures** in a **Sports Management System**.  
 The system tracks players, matches, and individual player scores. Key concepts include:
 
 - **User-Defined Functions (UDFs)**: To calculate player initials or total points.  
@@ -260,6 +260,4 @@ SELECT @total;
 - Implemented **user-defined functions** to get player initials and total points.  
 - Implemented **stored procedures** to insert players, complete matches, and calculate total points.  
 - Demonstrated **usage with input and output examples**.
-
-This system provides a simple but effective way to **manage sports data using MySQL** with functions and procedures.
 
