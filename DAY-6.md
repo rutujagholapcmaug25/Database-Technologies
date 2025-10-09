@@ -1,4 +1,3 @@
-# MySQL Learning Summary
 
 ## 1. MySQL Statements
 
