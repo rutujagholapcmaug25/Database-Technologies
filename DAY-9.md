@@ -1,6 +1,5 @@
 # ACID Properties in DBMS
 
-## Introduction
 A **database transaction** is a logical unit of work in a database that typically consists of multiple operations such as creating, updating, or retrieving data. Transactions must ensure **data integrity** and consistency, even in the case of errors, system crashes, or concurrent access.  
 
 The reliability of transactions is enforced by the **ACID properties**: **Atomicity, Consistency, Isolation, and Durability**.
