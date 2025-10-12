@@ -1,6 +1,4 @@
-# MySQL Department & Employee Database - Complete Guide
-
-## Database Setup
+# Department & Employee Database
 
 ### Create Database and Tables
 
@@ -687,12 +685,3 @@ WHERE NOT EXISTS (
 - Used with `ON` clause to specify join condition
 
 ---
-
-## Practice Tips
-
-1. **Always use table aliases** for clarity in joins
-2. **Test subqueries independently** before nesting
-3. **Use EXPLAIN** to understand query execution
-4. **Remember**: WHERE filters before grouping, HAVING filters after
-5. **Correlated subqueries** execute once per outer row (slower)
-6. **Window functions** are powerful for ranking and analytics
