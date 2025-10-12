@@ -1,7 +1,5 @@
 # MySQL Assignment 6 - Stored Procedures, Functions, Triggers & Cursors
 
-**PG-DAC August 25**
-
 ---
 
 ## 1. Stored Procedure Without Parameters
@@ -572,7 +570,7 @@ SELECT GetFactorial(5);
 
 ---
 
-## Key Concepts Summary
+## Summary
 
 ### Stored Procedures vs Functions
 
@@ -583,23 +581,3 @@ SELECT GetFactorial(5);
 | DML Operations | Can perform INSERT, UPDATE, DELETE | Generally read-only operations |
 | Transaction Control | Can use COMMIT, ROLLBACK | Cannot use transaction control |
 
-### DELIMITER Command
-- Changes the statement delimiter temporarily
-- Necessary because procedures/functions contain semicolons
-- Must be reset after creating the procedure/function
-
-### Variable Declaration
-```sql
-DECLARE variable_name datatype [DEFAULT value];
-```
-
-### Common Errors to Avoid
-1. Forgetting DELIMITER when creating procedures/functions
-2. Using `RETURN` instead of `RETURNS` in function declaration
-3. Not declaring variables before use
-4. Forgetting to reset DELIMITER after procedure creation
-5. Misspelling keywords (e.g., "functiom" instead of "function")
-
----
-
-**End of Assignment**
