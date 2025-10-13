@@ -155,10 +155,10 @@ Empty set (0.00 sec)
 
 ---
 
-## 5. Update Salary Records Where ID = 5
+## 5. Update Salary Records Where ID = 2
 
 ### Question
-Write a SQL query to update salary records from a table where id = 5.
+Write a SQL query to update salary records from a table where id = 2.
 
 ### Command
 ```sql
